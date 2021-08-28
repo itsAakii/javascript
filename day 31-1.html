@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nested Functions</title>
+    </head>
+
+    <body>
+
+        <p id="d"></p>
+
+        <script>
+            document.getElementById("d").innerHTML=add();
+
+            function add() {
+                let sum=0;
+
+                function plus() {
+                    sum=sum+1;
+                }
+                plus();
+                return sum;
+            }
+
+
+        </script>
+    </body>
+
+
+</html>
+

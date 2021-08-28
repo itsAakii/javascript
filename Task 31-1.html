@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title> Nested Functions task</title>
+    </head>
+
+    <body>
+
+        <p id="d"></p>
+        <p id="t"></p>
+
+        <script>
+            document.getElementById("d").innerHTML=main();
+            
+
+            function main() {
+                let res=5;
+                
+
+                function minus() {
+                    res=res-1;
+                }
+
+                function add() {
+                    res=res+1;  
+                }
+
+                function div() {
+                    res=res/1;      
+                }
+
+                function mul() {
+                    res=res*1;      
+                }
+                minus();
+                add();
+                div()
+                mul();
+            
+                return res;
+                
+            }
+
+
+        </script>
+    </body>
+
+
+</html>
+

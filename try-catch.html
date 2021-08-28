@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Catch/Try</title>
+    </head>
+
+    <body>
+        <h2> this is alert message</h2>
+        <p id="demo"></p>
+
+        <script>
+            function add(t,s) {
+                return t*s;
+            }
+            try {
+                var x=add(2,3);
+                document.getElementById("demo").innerHTML=x;
+
+            }
+
+            catch(err) {
+                document.getElementById("demo").innerHTML=err.message;
+            }
+            
+        </script>
+    </body>
+</html>

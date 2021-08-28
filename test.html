@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Nested Functions</title>
+    </head>
+
+    <body>
+
+        <p id="d"></p>
+        <p id="t"></p>
+
+        <script>
+            document.getElementById("d").innerHTML=add();
+
+            function add() {
+                let sum=0;
+
+                function plus() {
+                    sum=sum+1;
+                }
+                plus();
+                return sum;
+            }
+
+            document.getElementById("t").innerHTML=sub();
+
+            function sub() {
+                let r=0;
+
+                function minus() {
+                    r=r-1;
+                }
+                minus();
+                return r;
+            }
+
+
+        </script>
+    </body>
+
+
+</html>
+
